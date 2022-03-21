@@ -9,7 +9,7 @@
         <div class="flex justify-between justify-items-center">
           <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Manage Attendance</h1>
           {% if user.is_manager %}
-            <a href="{% url 'attendance:create' %}" class="text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Mark Attendance</a>
+            <a href="{% url 'attendance:create' %}" class="text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Create Attendance</a>
           {% endif %}
           {% if user.is_employee %}
             <a href="{% url 'projects:list' %}" class="text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Back</a>

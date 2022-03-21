@@ -5,9 +5,11 @@
 <section class="text-gray-600 body-font overflow-hidden">
   <div class="flex justify-center px-5 py-24 mx-auto">
     <form method="post" class="p-10 shadow-xl rounded-lg">
+      <h1 class="text-2xl mb-5 font-bold border-b">Create Project</h1>
   {% csrf_token %} {{ form | crispy }}
-  <div class="flex justify-center">
-    <input type="submit" value="Save"  class="bg-green-400 text-white px-4 py-2 rounded-lg hover:bg-green-500" />
+  <div class="flex justify-around">
+    <input type="submit" value="Create"  class="bg-green-400 text-white px-4 py-2 rounded-lg hover:bg-green-500" />
+    <a href="{% url 'projects:list' %}"  class="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500">Cancel</a>
   </div>
 </div>
 </form>
